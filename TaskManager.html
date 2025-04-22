@@ -1,0 +1,34 @@
+<!-- Kim Mayo, WEB.115.0002, Final Project - Task Manager -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+
+  <!--Link to css file-->
+  <link rel="stylesheet" href="stylesTM.css">
+  
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  <!--Create form for task manager-->
+  <form id="taskForm">
+    <input type="text" id="taskName" placeholder="Enter task name" required />
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <label><input type="checkbox" id="isImportant" /> Important</label>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <!--Div so tasks can be displayed dynamically-->
+  <div id="taskmanager"></div>
+
+  <!--Call JavaScript file-->
+  <script src="scriptTM.js"></script>
+</body>
+</html>
